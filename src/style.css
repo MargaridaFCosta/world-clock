@@ -1,10 +1,11 @@
 body {
   font-family: sans-serif;
-  background-color: rgba(122, 177, 216, 0.3);
+  background-color: rgba(167, 136, 224, 0.5);
 }
 
 h1 {
   text-align: center;
+  color: #e257a0;
 }
 
 h2 {
@@ -18,11 +19,17 @@ select {
   font-size: 18px;
   border-radius: 4px;
 }
+
+a {
+  color: #e257a0;
+  text-decoration: none;
+}
+
 .container {
   max-width: 600px;
   margin: 0px auto;
   padding: 40px;
-  background-color: white;
+  background-color: rgba(255, 237, 190, 0.5);
   border-radius: 10px;
   box-shadow: 8px -7px 7px rgba(205, 202, 202, 0.2);
 }

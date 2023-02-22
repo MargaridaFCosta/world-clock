@@ -38,6 +38,7 @@ function updateCityTimezone(event) {
             "h:mm:ss"
           )} <small>${cityTimezone.format("A")}</small></div>
         </div>
+        <a href="/">Homepage</a>
     `;
 }
 
