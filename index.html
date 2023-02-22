@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -17,14 +19,14 @@
         <option value="">Paris</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="london">
         <div>
           <h2>London</h2>
           <div class="date">2 February 2023</div>
         </div>
         <div class="time">03:03:10 <small>PM</small></div>
       </div>
-      <div class="city">
+      <div class="city" id="toronto">
         <div>
           <h2>Toronto</h2>
           <div class="date">2 February 2023</div>
