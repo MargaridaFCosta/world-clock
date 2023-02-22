@@ -20,5 +20,27 @@ function currentTime() {
   );
 }
 
+function updateCityTimezone(event) {
+  let timezone = event.target.value;
+  let cityName = timezone.replace("_", " ").split("/")[1];
+  let cityTimezone = moment().tz(timezone);
+  let citiesElement = document.querySelector("#cities");
+
+  citiesElement.innerHTML = `<div class="city">
+          <div>
+            <h2>${cityName}</h2>
+            <div class="date">${cityTimezone.format("MMMM Do YYYY")}</div>
+          </div>
+          <div class="time">${cityTimezone.format(
+            "h:mm:ss"
+          )} <small>${cityTimezone.format("A")}</small></div>
+        </div>
+    `;
+}
+
 currentTime();
 setInterval(currentTime, 1000);
+
+let selectElement = document.querySelector("#world-time");
+
+selectElement.addEventListener("change", updateCityTimezone);
