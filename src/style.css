@@ -65,3 +65,20 @@ footer {
   text-align: center;
   margin-top: 0;
 }
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+  .time {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .time small {
+    font-size: 15px;
+  }
+}
